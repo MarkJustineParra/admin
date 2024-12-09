@@ -1,0 +1,253 @@
+/* Reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  background-color: #333;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+header .icons {
+  display: flex;
+  gap: 20px;
+}
+
+header .icons div {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header .profile {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header .profile .image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header .profile .name {
+  font-size: 1rem;
+  color: white;
+}
+
+header .profile .role {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Sidebar styles */
+.side-bar {
+  width: 250px;
+  background-color: #282828;
+  color: #fff;
+  height: 100vh;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.side-bar .navbar a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.side-bar .navbar a:hover {
+  background-color: #3a3a3a;
+}
+
+.side-bar .navbar i {
+  margin-right: 15px;
+}
+
+/* Chat container styles */
+.chat-container {
+  margin-left: 250px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.chat-container .left-side {
+  margin-bottom: 20px;
+}
+
+.chat-container .left-side h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.chat-container .chat-title {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.chat-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+  background-color: #ebebeb;
+}
+
+.chat-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-item span {
+  font-weight: bold;
+  color: #333;
+}
+
+.chat-item small {
+  color: #777;
+}
+
+/* Chat area */
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  margin-top: 20px;
+}
+
+.messages {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.input-area button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
+
+
+.flex-btn{
+  display: flex;
+  gap: 1rem;
+}
+
+.header{
+  position: sticky;
+  top:0; left:0; right: 0;
+  background-color: var(--white);
+  z-index: 1000;
+  border-bottom: var(--border);
+}
+
+.header .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+.header .flex .image{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2;
+}
+#imgICON{
+  width: 40%;
+  height: 40%;
+}

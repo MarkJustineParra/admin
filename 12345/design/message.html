@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chats</title>
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Fundom</h3>
+    <ul>
+      <li><i>&#x1F3E0;</i> Home</li>
+      <li><i>&#x1F465;</i> Chat with user</li>
+      <li><i>&#x1F4DA;</i> About</li>
+      <li><i>&#x1F511;</i> Logout</li>
+    </ul>
+  </div>
+
+  <!-- Chat Container -->
+  <div class="chat-container">
+    <div class="chat-header">
+      <span>Chats</span>
+    </div>
+
+    <div style="display: flex; height: 100%;">
+      <!-- Chat List -->
+      <div class="chat-list">
+        <div class="chat-item">
+          <img src="https://via.placeholder.com/40" alt="User Image">
+          <span>John Kenneth Sangco</span>
+        </div>
+        <div class="chat-item">
+          <img src="https://via.placeholder.com/40" alt="User Image">
+          <span>PHP Community</span>
+        </div>
+      </div>
+
+      <!-- Chat Area -->
+      <div class="chat-area">
+        <div class="messages">
+          <!-- Messages will appear here -->
+        </div>
+        <div class="input-area">
+          <input type="text" placeholder="Type a message...">
+          <button>Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
